@@ -1,0 +1,17 @@
+<div style="padding: 13px;">
+    <!-- <mat-spinner *ngIf="books.length === 0"></mat-spinner> -->
+    <h1 *ngIf="books.length ===0"> No Books Found</h1>
+    <mat-card *ngFor="let book of books" style="margin-top:11px;">
+        <mat-card-header>
+            <mat-card-title>{{book.name}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                Author: {{book.author}}
+            </p>
+         
+        </mat-card-content>
+      
+      
+    </mat-card>
+</div>
